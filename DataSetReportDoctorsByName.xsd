@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetReportDoctorsByName" targetNamespace="http://tempuri.org/DataSetReportDoctorsByName.xsd" xmlns:mstns="http://tempuri.org/DataSetReportDoctorsByName.xsd" xmlns="http://tempuri.org/DataSetReportDoctorsByName.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DB_myClinicConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_myClinicConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.myClinic.Properties.Settings.GlobalReference.Default.DB_myClinicConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_myClinicConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Tbl_patieont.name AS name_patient, Tbl_patieont.family AS famiy_patient, Tbl_patieont.FileCode, Tbl_patieont.mobile, Tbl_patieont.NationalCode, Tbl_Doctore.name AS name_doctors, 
+                         Tbl_Doctore.cood_D AS cood_doc, Tbl_section.sectionType, Tbl_visitTime.date AS date_visit, Tbl_visitTime.time AS time_visit, Tbl_visitTime.comment AS comment_visit, Tbl_visitTime.ID AS id_visitTime
+FROM            Tbl_Doctore INNER JOIN
+                         Tbl_section ON Tbl_Doctore.ID_sec = Tbl_section.ID INNER JOIN
+                         Tbl_visitTime ON Tbl_Doctore.ID = Tbl_visitTime.id_doc INNER JOIN
+                         Tbl_patieont ON Tbl_visitTime.id_pat = Tbl_patieont.ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="name_patient" DataSetColumn="name_patient" />
+              <Mapping SourceColumn="famiy_patient" DataSetColumn="famiy_patient" />
+              <Mapping SourceColumn="FileCode" DataSetColumn="FileCode" />
+              <Mapping SourceColumn="mobile" DataSetColumn="mobile" />
+              <Mapping SourceColumn="NationalCode" DataSetColumn="NationalCode" />
+              <Mapping SourceColumn="name_doctors" DataSetColumn="name_doctors" />
+              <Mapping SourceColumn="cood_doc" DataSetColumn="cood_doc" />
+              <Mapping SourceColumn="sectionType" DataSetColumn="sectionType" />
+              <Mapping SourceColumn="date_visit" DataSetColumn="date_visit" />
+              <Mapping SourceColumn="time_visit" DataSetColumn="time_visit" />
+              <Mapping SourceColumn="comment_visit" DataSetColumn="comment_visit" />
+              <Mapping SourceColumn="id_visitTime" DataSetColumn="id_visitTime" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetReportDoctorsByName" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetReportDoctorsByName" msprop:Generator_UserDSName="DataSetReportDoctorsByName">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name_patient" msprop:Generator_ColumnVarNameInTable="columnname_patient" msprop:Generator_ColumnPropNameInRow="name_patient" msprop:Generator_ColumnPropNameInTable="name_patientColumn" msprop:Generator_UserColumnName="name_patient" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="famiy_patient" msprop:Generator_ColumnVarNameInTable="columnfamiy_patient" msprop:Generator_ColumnPropNameInRow="famiy_patient" msprop:Generator_ColumnPropNameInTable="famiy_patientColumn" msprop:Generator_UserColumnName="famiy_patient" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FileCode" msprop:Generator_ColumnVarNameInTable="columnFileCode" msprop:Generator_ColumnPropNameInRow="FileCode" msprop:Generator_ColumnPropNameInTable="FileCodeColumn" msprop:Generator_UserColumnName="FileCode" type="xs:int" />
+              <xs:element name="mobile" msprop:Generator_ColumnVarNameInTable="columnmobile" msprop:Generator_ColumnPropNameInRow="mobile" msprop:Generator_ColumnPropNameInTable="mobileColumn" msprop:Generator_UserColumnName="mobile" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NationalCode" msprop:Generator_ColumnVarNameInTable="columnNationalCode" msprop:Generator_ColumnPropNameInRow="NationalCode" msprop:Generator_ColumnPropNameInTable="NationalCodeColumn" msprop:Generator_UserColumnName="NationalCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="name_doctors" msprop:Generator_ColumnVarNameInTable="columnname_doctors" msprop:Generator_ColumnPropNameInRow="name_doctors" msprop:Generator_ColumnPropNameInTable="name_doctorsColumn" msprop:Generator_UserColumnName="name_doctors" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cood_doc" msprop:Generator_ColumnVarNameInTable="columncood_doc" msprop:Generator_ColumnPropNameInRow="cood_doc" msprop:Generator_ColumnPropNameInTable="cood_docColumn" msprop:Generator_UserColumnName="cood_doc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sectionType" msprop:Generator_ColumnVarNameInTable="columnsectionType" msprop:Generator_ColumnPropNameInRow="sectionType" msprop:Generator_ColumnPropNameInTable="sectionTypeColumn" msprop:Generator_UserColumnName="sectionType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date_visit" msprop:Generator_ColumnVarNameInTable="columndate_visit" msprop:Generator_ColumnPropNameInRow="date_visit" msprop:Generator_ColumnPropNameInTable="date_visitColumn" msprop:Generator_UserColumnName="date_visit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="time_visit" msprop:Generator_ColumnVarNameInTable="columntime_visit" msprop:Generator_ColumnPropNameInRow="time_visit" msprop:Generator_ColumnPropNameInTable="time_visitColumn" msprop:Generator_UserColumnName="time_visit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="comment_visit" msprop:Generator_ColumnVarNameInTable="columncomment_visit" msprop:Generator_ColumnPropNameInRow="comment_visit" msprop:Generator_ColumnPropNameInTable="comment_visitColumn" msprop:Generator_UserColumnName="comment_visit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_visitTime" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_visitTime" msprop:Generator_ColumnPropNameInRow="id_visitTime" msprop:Generator_ColumnPropNameInTable="id_visitTimeColumn" msprop:Generator_UserColumnName="id_visitTime" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:id_visitTime" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,195 @@
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\bin\Debug\myClinic.exe.config
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\bin\Debug\myClinic.exe
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\bin\Debug\myClinic.pdb
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.dll
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.SqlServer.dll
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.xml
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.SqlServer.xml
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.csprojResolveAssemblyReference.cache
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmReceptionClinic.resources
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.frm_splash_screen.resources
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.Properties.Resources.resources
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.csproj.GenerateResource.Cache
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.exe
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.pdb
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmMain.resources
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\bin\Debug\MetroFramework.dll
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.FormTest.resources
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\bin\Debug\Klik.Windows.Forms.EntryLib.V2.2008.dll
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.exe.licenses
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\bin\Debug\GlassButton.dll
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\bin\Debug\MetroFramework.Design.dll
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\bin\Debug\MetroFramework.Fonts.dll
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\bin\Debug\TxtProNetV3.dll
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmReception.resources
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.frmUpdatePatient.resources
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.frmUpdateVisitTime.resources
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmSetting.resources
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmUpdateDoc.resources
+E:\c#project\project in class sanaaty\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmUpdateSection.resources
+M:\my clinic\myClinic\myClinic\bin\Debug\myClinic.exe.config
+M:\my clinic\myClinic\myClinic\obj\Debug\myClinic.exe
+M:\my clinic\myClinic\myClinic\obj\Debug\myClinic.pdb
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\bin\Debug\myClinic.exe.config
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.exe
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.pdb
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\bin\Debug\myClinic.exe
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\bin\Debug\myClinic.pdb
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.dll
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.xml
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.csprojResolveAssemblyReference.cache
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmMain.resources
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmReception.resources
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmSetting.resources
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmUpdateDoc.resources
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.frmUpdatePatient.resources
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmUpdateSection.resources
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.frmUpdateVisitTime.resources
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_About.resources
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Search.resources
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.frm_splash_screen.resources
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.Properties.Resources.resources
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.csproj.GenerateResource.Cache
+C:\Users\win1\Desktop\my clinic\myClinic\myClinic\obj\Debug\myClinic.exe.licenses
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\myClinic.exe
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\BPersianCalender.dll
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\MaterialSkin.dll
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\Newtonsoft.Json.dll
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\DevComponents.DotNetBar2.dll
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.dll
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.SqlServer.dll
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\myClinic.exe.config
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.csproj.ResolveComReference.cache
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\ReportVisitDocByName.rdlc
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\myClinic.pdb
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.xml
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.SqlServer.xml
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\Newtonsoft.Json.xml
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.csprojResolveAssemblyReference.cache
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmExportExcel.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmLogin.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmMain.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmReception.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmReport.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmSetting.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmUpdateDoc.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.frmUpdatePatient.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmUpdateSection.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.frmUpdateVisitTime.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_About.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_choseBackup.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Forget.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_getBackup_patients.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Registery.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Search.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Sent.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_show_visit_Doc.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.frm_splash_screen.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Trial.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Update_username_pass_Doc.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Properties.Resources.resources
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.csproj.GenerateResource.Cache
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.exe.licenses
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\RdlCompile.cache
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\RdlCompile.compiled
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.exe
+E:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.pdb
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\myClinic.exe.config
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.csproj.ResolveComReference.cache
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.exe
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.pdb
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.csprojResolveAssemblyReference.cache
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmExportExcel.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmLogin.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmMain.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmReception.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmReport.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmSetting.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmUpdateDoc.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.frmUpdatePatient.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmUpdateSection.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.frmUpdateVisitTime.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_About.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_choseBackup.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Forget.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_getBackup_patients.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Registery.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Search.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Sent.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_show_visit_Doc.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.frm_splash_screen.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Trial.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Update_username_pass_Doc.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.Properties.Resources.resources
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.csproj.GenerateResource.Cache
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\myClinic.exe.licenses
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\ReportVisitDocByName.rdlc
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\myClinic.exe
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\myClinic.pdb
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\BPersianCalender.dll
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\DevComponents.DotNetBar2.dll
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.dll
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.SqlServer.dll
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\MaterialSkin.dll
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\Newtonsoft.Json.dll
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.xml
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.SqlServer.xml
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\bin\Debug\Newtonsoft.Json.xml
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\RdlCompile.cache
+F:\c#project\project in class sanaaty\ClassProje\my clinic\myClinic\myClinic\obj\Debug\RdlCompile.compiled
+E:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\myClinic.exe.config
+E:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.csproj.ResolveComReference.cache
+E:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.exe
+E:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.pdb
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.csproj.ResolveComReference.cache
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmExportExcel.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmLogin.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmMain.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmReception.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmReport.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmSetting.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmUpdateDoc.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.frmUpdatePatient.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.FrmUpdateSection.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.frmUpdateVisitTime.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_About.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_choseBackup.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Forget.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_getBackup_patients.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Registery.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Search.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Sent.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_show_visit_Doc.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.frm_splash_screen.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Trial.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.Frm_Update_username_pass_Doc.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.Properties.Resources.resources
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.csproj.GenerateResource.cache
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.exe.licenses
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.csproj.CoreCompileInputs.cache
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.exe
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.pdb
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\ReportVisitDocByName.rdlc
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\myClinic.exe.config
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\myClinic.exe
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\myClinic.pdb
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.dll
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.SqlServer.dll
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\Newtonsoft.Json.dll
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.xml
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\EntityFramework.SqlServer.xml
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\Newtonsoft.Json.xml
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\C#\winApps\my clinic\myClinic\myClinic\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.csproj.AssemblyReference.cache
+D:\C#\winApps\my clinic\myClinic\myClinic\obj\Debug\myClinic.csproj.Up2Date

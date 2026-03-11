@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_myClinicModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Tbl_Doctore">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cood_D" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ID_sec" Type="Int32" />
+    <Property Name="coment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="userName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="imageDoc" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Tbl_section" Relationship="Self.FK_Tbl_Doctore_Tbl_section" FromRole="Tbl_Doctore" ToRole="Tbl_section" />
+    <NavigationProperty Name="Tbl_visitTime" Relationship="Self.FK_Tbl_visitTime_Tbl_Doctore" FromRole="Tbl_Doctore" ToRole="Tbl_visitTime" />
+  </EntityType>
+  <EntityType Name="Tbl_patieont">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="family" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tell" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="NationalCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="FileCode" Type="Int32" Nullable="false" />
+    <Property Name="comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tbl_visitTime" Relationship="Self.FK_Tbl_visitTime_Tbl_patieont" FromRole="Tbl_patieont" ToRole="Tbl_visitTime" />
+  </EntityType>
+  <EntityType Name="Tbl_section">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sectionType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tbl_Doctore" Relationship="Self.FK_Tbl_Doctore_Tbl_section" FromRole="Tbl_section" ToRole="Tbl_Doctore" />
+  </EntityType>
+  <EntityType Name="Tbl_typeLogin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="typeLogin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Tbl_visitTime">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_pat" Type="Int32" />
+    <Property Name="id_doc" Type="Int32" />
+    <Property Name="id_sec" Type="Int32" />
+    <Property Name="time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Precision="0" />
+    <Property Name="comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tbl_Doctore" Relationship="Self.FK_Tbl_visitTime_Tbl_Doctore" FromRole="Tbl_visitTime" ToRole="Tbl_Doctore" />
+    <NavigationProperty Name="Tbl_patieont" Relationship="Self.FK_Tbl_visitTime_Tbl_patieont" FromRole="Tbl_visitTime" ToRole="Tbl_patieont" />
+  </EntityType>
+  <Association Name="FK_Tbl_Doctore_Tbl_section">
+    <End Role="Tbl_section" Type="Self.Tbl_section" Multiplicity="0..1" />
+    <End Role="Tbl_Doctore" Type="Self.Tbl_Doctore" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_section">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Doctore">
+        <PropertyRef Name="ID_sec" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_visitTime_Tbl_Doctore">
+    <End Role="Tbl_Doctore" Type="Self.Tbl_Doctore" Multiplicity="0..1" />
+    <End Role="Tbl_visitTime" Type="Self.Tbl_visitTime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Doctore">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_visitTime">
+        <PropertyRef Name="id_doc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_visitTime_Tbl_patieont">
+    <End Role="Tbl_patieont" Type="Self.Tbl_patieont" Multiplicity="0..1" />
+    <End Role="Tbl_visitTime" Type="Self.Tbl_visitTime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_patieont">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_visitTime">
+        <PropertyRef Name="id_pat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_myClinicEntities4" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Tbl_Doctore" EntityType="Self.Tbl_Doctore" />
+    <EntitySet Name="Tbl_patieont" EntityType="Self.Tbl_patieont" />
+    <EntitySet Name="Tbl_section" EntityType="Self.Tbl_section" />
+    <EntitySet Name="Tbl_typeLogin" EntityType="Self.Tbl_typeLogin" />
+    <EntitySet Name="Tbl_visitTime" EntityType="Self.Tbl_visitTime" />
+    <AssociationSet Name="FK_Tbl_Doctore_Tbl_section" Association="Self.FK_Tbl_Doctore_Tbl_section">
+      <End Role="Tbl_section" EntitySet="Tbl_section" />
+      <End Role="Tbl_Doctore" EntitySet="Tbl_Doctore" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_visitTime_Tbl_Doctore" Association="Self.FK_Tbl_visitTime_Tbl_Doctore">
+      <End Role="Tbl_Doctore" EntitySet="Tbl_Doctore" />
+      <End Role="Tbl_visitTime" EntitySet="Tbl_visitTime" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_visitTime_Tbl_patieont" Association="Self.FK_Tbl_visitTime_Tbl_patieont">
+      <End Role="Tbl_patieont" EntitySet="Tbl_patieont" />
+      <End Role="Tbl_visitTime" EntitySet="Tbl_visitTime" />
+    </AssociationSet>
+    <FunctionImport Name="SP_check_Visit" ReturnType="Collection(DB_myClinicModel.SP_check_Visit_Result)">
+      <Parameter Name="id_doct" Mode="In" Type="Int32" />
+      <Parameter Name="date" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_count" ReturnType="Collection(Int32)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_doctors" ReturnType="Collection(DB_myClinicModel.SP_doctors_Result)" />
+    <FunctionImport Name="SP_getname_doc" ReturnType="Collection(DB_myClinicModel.SP_getname_doc_Result)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="id_S" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_update">
+      <Parameter Name="flag" Mode="In" Type="Int32" />
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="family" Mode="In" Type="String" />
+      <Parameter Name="tell" Mode="In" Type="String" />
+      <Parameter Name="mobile" Mode="In" Type="String" />
+      <Parameter Name="Ncood" Mode="In" Type="String" />
+      <Parameter Name="address" Mode="In" Type="String" />
+      <Parameter Name="filecod" Mode="In" Type="Int32" />
+      <Parameter Name="commend" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_view" ReturnType="Collection(DB_myClinicModel.sp_view_Result)">
+      <Parameter Name="flag" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_sent" ReturnType="Collection(DB_myClinicModel.SP_sent_Result)">
+      <Parameter Name="id_section" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_delete_patieont">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="SP_check_Visit_Result">
+    <Property Type="Int32" Name="id_doc" Nullable="true" />
+    <Property Type="String" Name="time" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="date" Nullable="true" />
+    <Property Type="Int32" Name="id_pat" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_doctors_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="name" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="phone" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="cood_D" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="coment" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="sectionType" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SP_getname_doc_Result">
+    <Property Type="String" Name="name" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="id_doctore" Nullable="false" />
+    <Property Type="Int32" Name="ID_sec" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_view_Result">
+    <Property Type="String" Name="name_patient" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="famiy_patient" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="FileCode" Nullable="false" />
+    <Property Type="String" Name="mobile" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="NationalCode" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="name_doctors" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="cood_doc" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="sectionType" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="date_visit" Nullable="true" />
+    <Property Type="String" Name="time_visit" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="comment_visit" Nullable="true" />
+    <Property Type="Int32" Name="id_visitTime" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_sent_Result">
+    <Property Type="String" Name="name_patient" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="famiy_patient" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="FileCode" Nullable="false" />
+    <Property Type="String" Name="mobile" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="NationalCode" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="sectionType" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="date_visit" Nullable="true" />
+    <Property Type="String" Name="time_visit" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="comment_visit" Nullable="true" />
+    <Property Type="Int32" Name="id_visitTime" Nullable="false" />
+  </ComplexType>
+</Schema>

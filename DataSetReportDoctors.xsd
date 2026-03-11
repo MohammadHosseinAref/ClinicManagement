@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetReportDoctors" targetNamespace="http://tempuri.org/DataSetReportDoctors.xsd" xmlns:mstns="http://tempuri.org/DataSetReportDoctors.xsd" xmlns="http://tempuri.org/DataSetReportDoctors.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DB_myClinicConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_myClinicConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.myClinic.Properties.Settings.GlobalReference.Default.DB_myClinicConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Tbl_DoctoreTableAdapter" GeneratorDataComponentClassName="Tbl_DoctoreTableAdapter" Name="Tbl_Doctore" UserDataComponentName="Tbl_DoctoreTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_myClinicConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Tbl_Doctore.name, Tbl_Doctore.phone, Tbl_Doctore.cood_D, Tbl_Doctore.coment, Tbl_section.sectionType
+FROM            Tbl_Doctore INNER JOIN
+                         Tbl_section ON Tbl_Doctore.ID_sec = Tbl_section.ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="phone" DataSetColumn="phone" />
+              <Mapping SourceColumn="cood_D" DataSetColumn="cood_D" />
+              <Mapping SourceColumn="coment" DataSetColumn="coment" />
+              <Mapping SourceColumn="sectionType" DataSetColumn="sectionType" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetReportDoctors" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetReportDoctors" msprop:Generator_UserDSName="DataSetReportDoctors">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tbl_Doctore" msprop:Generator_TableClassName="Tbl_DoctoreDataTable" msprop:Generator_TableVarName="tableTbl_Doctore" msprop:Generator_RowChangedName="Tbl_DoctoreRowChanged" msprop:Generator_TablePropName="Tbl_Doctore" msprop:Generator_RowDeletingName="Tbl_DoctoreRowDeleting" msprop:Generator_RowChangingName="Tbl_DoctoreRowChanging" msprop:Generator_RowEvHandlerName="Tbl_DoctoreRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_DoctoreRowDeleted" msprop:Generator_RowClassName="Tbl_DoctoreRow" msprop:Generator_UserTableName="Tbl_Doctore" msprop:Generator_RowEvArgName="Tbl_DoctoreRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="phone" msprop:Generator_ColumnVarNameInTable="columnphone" msprop:Generator_ColumnPropNameInRow="phone" msprop:Generator_ColumnPropNameInTable="phoneColumn" msprop:Generator_UserColumnName="phone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cood_D" msprop:Generator_ColumnVarNameInTable="columncood_D" msprop:Generator_ColumnPropNameInRow="cood_D" msprop:Generator_ColumnPropNameInTable="cood_DColumn" msprop:Generator_UserColumnName="cood_D" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="coment" msprop:Generator_ColumnVarNameInTable="columncoment" msprop:Generator_ColumnPropNameInRow="coment" msprop:Generator_ColumnPropNameInTable="comentColumn" msprop:Generator_UserColumnName="coment" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sectionType" msprop:Generator_ColumnVarNameInTable="columnsectionType" msprop:Generator_ColumnPropNameInRow="sectionType" msprop:Generator_ColumnPropNameInTable="sectionTypeColumn" msprop:Generator_UserColumnName="sectionType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

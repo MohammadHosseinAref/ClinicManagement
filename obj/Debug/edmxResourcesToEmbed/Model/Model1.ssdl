@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_myClinicModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Tbl_Doctore">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="cood_D" Type="nvarchar" MaxLength="50" />
+    <Property Name="ID_sec" Type="int" />
+    <Property Name="coment" Type="text" />
+    <Property Name="userName" Type="nvarchar" MaxLength="50" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+    <Property Name="imageDoc" Type="image" />
+  </EntityType>
+  <EntityType Name="Tbl_patieont">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="family" Type="nvarchar" MaxLength="50" />
+    <Property Name="tell" Type="nvarchar" MaxLength="20" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="20" />
+    <Property Name="NationalCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="address" Type="nvarchar" MaxLength="350" />
+    <Property Name="FileCode" Type="int" Nullable="false" />
+    <Property Name="comment" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Tbl_section">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sectionType" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tbl_typeLogin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="typeLogin" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tbl_visitTime">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_pat" Type="int" />
+    <Property Name="id_doc" Type="int" />
+    <Property Name="id_sec" Type="int" />
+    <Property Name="time" Type="nvarchar" MaxLength="50" />
+    <Property Name="date" Type="date" />
+    <Property Name="comment" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_Tbl_Doctore_Tbl_section">
+    <End Role="Tbl_section" Type="Self.Tbl_section" Multiplicity="0..1" />
+    <End Role="Tbl_Doctore" Type="Self.Tbl_Doctore" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_section">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Doctore">
+        <PropertyRef Name="ID_sec" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_visitTime_Tbl_Doctore">
+    <End Role="Tbl_Doctore" Type="Self.Tbl_Doctore" Multiplicity="0..1" />
+    <End Role="Tbl_visitTime" Type="Self.Tbl_visitTime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Doctore">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_visitTime">
+        <PropertyRef Name="id_doc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_visitTime_Tbl_patieont">
+    <End Role="Tbl_patieont" Type="Self.Tbl_patieont" Multiplicity="0..1" />
+    <End Role="Tbl_visitTime" Type="Self.Tbl_visitTime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_patieont">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_visitTime">
+        <PropertyRef Name="id_pat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="SP_check_Visit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_doct" Type="int" Mode="In" />
+    <Parameter Name="date" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SP_count" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_delete_patieont" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_doctors" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_getname_doc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="id_S" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_sent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_section" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="flag" Type="int" Mode="In" />
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="name" Type="nvarchar" Mode="In" />
+    <Parameter Name="family" Type="nvarchar" Mode="In" />
+    <Parameter Name="tell" Type="nvarchar" Mode="In" />
+    <Parameter Name="mobile" Type="nvarchar" Mode="In" />
+    <Parameter Name="Ncood" Type="nvarchar" Mode="In" />
+    <Parameter Name="address" Type="nvarchar" Mode="In" />
+    <Parameter Name="filecod" Type="int" Mode="In" />
+    <Parameter Name="commend" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_view" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="flag" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="DB_myClinicModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Doctore" EntityType="Self.Tbl_Doctore" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_patieont" EntityType="Self.Tbl_patieont" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_section" EntityType="Self.Tbl_section" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_typeLogin" EntityType="Self.Tbl_typeLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_visitTime" EntityType="Self.Tbl_visitTime" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Tbl_Doctore_Tbl_section" Association="Self.FK_Tbl_Doctore_Tbl_section">
+      <End Role="Tbl_section" EntitySet="Tbl_section" />
+      <End Role="Tbl_Doctore" EntitySet="Tbl_Doctore" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_visitTime_Tbl_Doctore" Association="Self.FK_Tbl_visitTime_Tbl_Doctore">
+      <End Role="Tbl_Doctore" EntitySet="Tbl_Doctore" />
+      <End Role="Tbl_visitTime" EntitySet="Tbl_visitTime" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_visitTime_Tbl_patieont" Association="Self.FK_Tbl_visitTime_Tbl_patieont">
+      <End Role="Tbl_patieont" EntitySet="Tbl_patieont" />
+      <End Role="Tbl_visitTime" EntitySet="Tbl_visitTime" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
